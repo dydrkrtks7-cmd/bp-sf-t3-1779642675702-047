@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-neon-void">
 <title>정보 | 마포 백링크 자동화 프로그램</title>
 <meta name="description" content="마포에서 운영되는 백링크 자동화 프로그램의 상세 기술 정보입니다. PBN, 서버 웜업, 알고리즘 조작의 모든 것을 공개합니다.">
 <meta name="keywords" content="마포 백링크 자동화 프로그램, PBN 구축, 서버 웜업 정보, SEO 알고리즘, 마포 서버 웜업">
@@ -15,166 +13,166 @@
 
 <style>
 :root {
-  --bg-color: #050505;
-  --text-main: #e0e0e0;
-  --accent-color: #00ff41;
-  --border-thick: 3px solid var(--text-main);
-  --border-thin: 1px solid #333;
-  --font-stack: 'Courier New', Courier, monospace;
+ --bg-color: #050505;
+ --text-main: #e0e0e0;
+ --accent-color: #00ff41;
+ --border-thick: 3px solid var(--text-main);
+ --border-thin: 1px solid #333;
+ --font-stack: 'Courier New', Courier, monospace;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-main);
-  font-family: var(--font-stack);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  font-size: 16px;
+ background-color: var(--bg-color);
+ color: var(--text-main);
+ font-family: var(--font-stack);
+ margin: 0;
+ padding: 0;
+ line-height: 1.6;
+ font-size: 16px;
 }
 
 header {
-  border-bottom: var(--border-thick);
-  padding: 2rem 1rem;
-  text-align: center;
+ border-bottom: var(--border-thick);
+ padding: 2rem 1rem;
+ text-align: center;
 }
 
 header h1 {
-  font-size: 3rem;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-  color: var(--accent-color);
-  text-shadow: 2px 2px 0px #fff;
+ font-size: 3rem;
+ margin: 0;
+ text-transform: uppercase;
+ letter-spacing: -2px;
+ color: var(--accent-color);
+ text-shadow: 2px 2px 0px #fff;
 }
 
 nav {
-  border-bottom: var(--border-thin);
-  padding: 1rem;
-  background: #000;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+ border-bottom: var(--border-thin);
+ padding: 1rem;
+ background: #000;
+ position: sticky;
+ top: 0;
+ z-index: 100;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ flex-wrap: wrap;
 }
 
 nav li {
-  display: inline-block;
+ display: inline-block;
 }
 
 nav a {
-  color: var(--text-main);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-  padding: 0.5rem 1rem;
-  transition: all 0.2s;
+ color: var(--text-main);
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ border: 1px solid transparent;
+ padding: 0.5rem 1rem;
+ transition: all 0.2s;
 }
 
 nav a:hover {
-  background-color: var(--accent-color);
-  color: #000;
-  border: 1px solid var(--accent-color);
+ background-color: var(--accent-color);
+ color: #000;
+ border: 1px solid var(--accent-color);
 }
 
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 2rem 1rem;
 }
 
 section {
-  margin-bottom: 4rem;
-  border: var(--border-thin);
-  padding: 2rem;
-  position: relative;
+ margin-bottom: 4rem;
+ border: var(--border-thin);
+ padding: 2rem;
+ position: relative;
 }
 
 section::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 20px;
-  height: 20px;
-  background: var(--accent-color);
-  z-index: 1;
+ content: '';
+ position: absolute;
+ top: -5px;
+ left: -5px;
+ width: 20px;
+ height: 20px;
+ background: var(--accent-color);
+ z-index: 1;
 }
 
 section h2 {
-  font-size: 2.5rem;
-  border-bottom: 2px solid var(--accent-color);
-  display: inline-block;
-  margin-top: 0;
-  padding-right: 2rem;
-  text-transform: uppercase;
+ font-size: 2.5rem;
+ border-bottom: 2px solid var(--accent-color);
+ display: inline-block;
+ margin-top: 0;
+ padding-right: 2rem;
+ text-transform: uppercase;
 }
 
 .info-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 2rem;
+ margin-top: 2rem;
 }
 
 .info-card {
-  border: 1px dashed var(--text-main);
-  padding: 1.5rem;
-  background: rgba(255,255,255,0.05);
+ border: 1px dashed var(--text-main);
+ padding: 1.5rem;
+ background: rgba(255,255,255,0.05);
 }
 
 .info-card h3 {
-  margin-top: 0;
-  color: var(--accent-color);
-  font-size: 1.5rem;
+ margin-top: 0;
+ color: var(--accent-color);
+ font-size: 1.5rem;
 }
 
 faq-item {
-  margin-bottom: 1.5rem;
-  border-left: 4px solid var(--accent-color);
-  padding-left: 1rem;
+ margin-bottom: 1.5rem;
+ border-left: 4px solid var(--accent-color);
+ padding-left: 1rem;
 }
 
 faq-question {
-  font-weight: bold;
-  font-size: 1.2rem;
-  display: block;
-  margin-bottom: 0.5rem;
+ font-weight: bold;
+ font-size: 1.2rem;
+ display: block;
+ margin-bottom: 0.5rem;
 }
 
 footer {
-  border-top: var(--border-thick);
-  padding: 3rem 1rem;
-  text-align: center;
-  background: #111;
-  margin-top: 4rem;
+ border-top: var(--border-thick);
+ padding: 3rem 1rem;
+ text-align: center;
+ background: #111;
+ margin-top: 4rem;
 }
 
 .contact-box {
-  border: 2px solid var(--accent-color);
-  display: inline-block;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 1rem;
+ border: 2px solid var(--accent-color);
+ display: inline-block;
+ padding: 1rem 2rem;
+ font-size: 1.5rem;
+ font-weight: bold;
+ margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
-  header h1 { font-size: 2rem; }
-  nav ul { flex-direction: column; gap: 1rem; align-items: center; }
-  section h2 { font-size: 2rem; }
-  .info-grid { grid-template-columns: 1fr; }
+ header h1 { font-size: 2rem; }
+ nav ul { flex-direction: column; gap: 1rem; align-items: center; }
+ section h2 { font-size: 2rem; }
+ .info-grid { grid-template-columns: 1fr; }
 }
 </style>
   <meta property="og:type" content="website">
@@ -183,100 +181,98 @@ footer {
 <body>
 
 <header>
-  <h1>정보 (Info)</h1>
-  <p style="margin: 0; font-size: 0.9rem; opacity: 0.7;">[SYSTEM_STATUS: ONLINE] // [LOCATION: MAPPO]</p>
+ <h1>정보 (Info)</h1>
+ <p style="margin: 0; font-size: 0.9rem; opacity: 0.7;">[SYSTEM_STATUS: ONLINE] // [LOCATION: MAPPO]</p>
 </header>
 
 <nav>
-  <ul>
-    <li><a href="/">메인</a></li>
-    <li><a href="/services">서비스</a></li>
-    <li><a href="/pricing">가격</a></li>
-    <li><a href="/info">정보</a></li>
-    <li><a href="tel:01062790862">문의: 010-6279-0862</a></li>
-  </ul>
+ <ul>
+ <li><a href="/">메인</a></li>
+ <li><a href="/services">서비스</a></li>
+ <li><a href="/pricing">가격</a></li>
+ <li><a href="/info">정보</a></li>
+ 
+ </ul>
 </nav>
 
 <main>
 
-  <section id="concept">
-    <h2>우리의 철학</h2>
-    <div class="info-grid">
-      <div class="info-card">
-        <h3>규칙은 깨라고 있는 것이다</h3>
-        <p>구글의 가이드라인? 그건 약자들을 위한 이야기입니다. 마포의 서버 웜업과 백링크 자동화 프로그램은 '화이트 햇' 따위에 연연하지 않습니다. 우리는 알고리즘의 허점을 파고들어 상위 노출이라는 결과를 쟁취합니다.</p>
-      </div>
-      <div class="info-card">
-        <h3>속도가 곧 돈이다</h3>
-        <p>수작업 링크 빌딩? 그건 옛날 이야기입니다. 우리의 자동화 시스템은 24 시간 내내 쉬지 않고 작동하며, 당신의 도메인 권한 (DA/PA) 을 기하급수적으로 끌어올립니다.</p>
-      </div>
-    </div>
-  </section>
+ <section id="concept">
+ <h2>우리의 철학</h2>
+ <div class="info-grid">
+ <div class="info-card">
+ <h3>규칙은 깨라고 있는 것이다</h3>
+ <p>구글의 가이드라인? 그건 약자들을 위한 이야기입니다. 마포의 서버 웜업과 백링크 자동화 프로그램은 '화이트 햇' 따위에 연연하지 않습니다. 우리는 알고리즘의 허점을 파고들어 상위 노출이라는 결과를 쟁취합니다.</p>
+ </div>
+ <div class="info-card">
+ <h3>속도가 곧 돈이다</h3>
+ <p>수작업 링크 빌딩? 그건 옛날 이야기입니다. 우리의 자동화 시스템은 24 시간 내내 쉬지 않고 작동하며, 당신의 도메인 권한 (DA/PA) 을 기하급수적으로 끌어올립니다.</p>
+ </div>
+ </div>
+ </section>
 
-  <section id="technical-data">
-    <h2>기술 스펙 (Technical Specs)</h2>
-    <p>우리가 사용하는 무기는 단순하지 않습니다. 마포 거리의 거친 환경에서도 견딜 수 있는 하드웨어와 소프트웨어의 결합체입니다.</p>
-    
-    <div class="info-grid">
-      <div class="info-card">
-        <h3>서버 웜업 프로토콜</h3>
-        <ul>
-          <li>[+] IP 로테이션: 매 요청마다 변경되는 프록시 체인</li>
-          <li>[+] 지문 방지: 완벽한 브라우저 지문 (Fingerprint) 스푸핑</li>
-          <li>[+] 인간 행동 시뮬레이션: 마우스 커서 움직임, 스크롤 속도, 체류 시간 자동화</li>
-        </ul>
-      </div>
-      <div class="info-card">
-        <h3>PBN (Private Blog Network)</h3>
-        <ul>
-          <li>[+] 만료 도메인 활용: 이미 권위를 가진 죽은 도메인 부활</li>
-          <li>[+] 링크 주스 분배: 메인 사이트로 향하는 링크 파워 최적화</li>
-          <li>[+] 콘텐츠 자동 생성: AI 기반의 자연스러운 앵커텍스트 배치</li>
-        </ul>
-      </div>
-      <div class="info-card">
-        <h3>보안 및 은닉</h3>
-        <ul>
-          <li>[+] 풋프린트 제거: 호스팅사, 네임서버, WHOIS 정보 완전 분리</li>
-          <li>[+] 클로킹 기술: 검색 엔진 봇과 실제 유저에게 다른 페이지 노출</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+ <section id="technical-data">
+ <h2>기술 스펙 (Technical Specs)</h2>
+ <p>우리가 사용하는 무기는 단순하지 않습니다. 마포 거리의 거친 환경에서도 견딜 수 있는 하드웨어와 소프트웨어의 결합체입니다.</p>
+ 
+ <div class="info-grid">
+ <div class="info-card">
+ <h3>서버 웜업 프로토콜</h3>
+ <ul>
+ <li>[+] IP 로테이션: 매 요청마다 변경되는 프록시 체인</li>
+ <li>[+] 지문 방지: 완벽한 브라우저 지문 (Fingerprint) 스푸핑</li>
+ <li>[+] 인간 행동 시뮬레이션: 마우스 커서 움직임, 스크롤 속도, 체류 시간 자동화</li>
+ </ul>
+ </div>
+ <div class="info-card">
+ <h3>PBN (Private Blog Network)</h3>
+ <ul>
+ <li>[+] 만료 도메인 활용: 이미 권위를 가진 죽은 도메인 부활</li>
+ <li>[+] 링크 주스 분배: 메인 사이트로 향하는 링크 파워 최적화</li>
+ <li>[+] 콘텐츠 자동 생성: AI 기반의 자연스러운 앵커텍스트 배치</li>
+ </ul>
+ </div>
+ <div class="info-card">
+ <h3>보안 및 은닉</h3>
+ <ul>
+ <li>[+] 풋프린트 제거: 호스팅사, 네임서버, WHOIS 정보 완전 분리</li>
+ <li>[+] 클로킹 기술: 검색 엔진 봇과 실제 유저에게 다른 페이지 노출</li>
+ </ul>
+ </div>
+ </div>
+ </section>
 
-  <section id="faq">
-    <h2>자주 묻는 질문 (FAQ)</h2>
-    
-    <div class="faq-item">
-      <span class="faq-question">Q. 백링크 자동화 프로그램 사용 시 패널티를 받지 않나요?</span>
-      <p>A: 우리는 '폭격'이 아닌 '주입'을 합니다. 자연스러운 링크 획득 곡선을 시뮬레이션하여 검색 엔진의 레이더를 피합니다. 하지만 SEO 는 전쟁입니다. 100% 안전보장은 없지만, 우리가 제공하는 건 가장 공격적이고 효과적인 전략입니다.</p>
-    </div>
+ <section id="faq">
+ <h2>자주 묻는 질문 (FAQ)</h2>
+ 
+ <div class="faq-item">
+ <span class="faq-question">Q. 백링크 자동화 프로그램 사용 시 패널티를 받지 않나요?</span>
+ <p>A: 우리는 '폭격'이 아닌 '주입'을 합니다. 자연스러운 링크 획득 곡선을 시뮬레이션하여 검색 엔진의 레이더를 피합니다. 하지만 SEO 는 전쟁입니다. 100% 안전보장은 없지만, 우리가 제공하는 건 가장 공격적이고 효과적인 전략입니다.</p>
+ </div>
 
-    <div class="faq-item">
-      <span class="faq-question">Q. 마포에서 직접 서버를 관리하나요?</span>
-      <p>A: 네. 마포구에 위치한 물리적 서버 팜을 운영하며, 국내 유동 IP 를 활용한 웜업 작업을 진행합니다. 해외 프록시와는 차원이 다른 신뢰도를 보장합니다.</p>
-    </div>
+ <div class="faq-item">
+ <span class="faq-question">Q. 마포에서 직접 서버를 관리하나요?</span>
+ <p>A: 네. 마포구에 위치한 물리적 서버 팜을 운영하며, 국내 유동 IP 를 활용한 웜업 작업을 진행합니다. 해외 프록시와는 차원이 다른 신뢰도를 보장합니다.</p>
+ </div>
 
-    <div class="faq-item">
-      <span class="faq-question">Q. 초보자도 사용할 수 있나요?</span>
-      <p>A: 우리의 인터페이스는 투박하지만 직관적입니다. 복잡한 설정은 필요 없습니다. 타겟 URL 과 키워드만 입력하면 됩니다. 나머지는 기계가 알아서 처리합니다.</p>
-    </div>
-  </section>
+ <div class="faq-item">
+ <span class="faq-question">Q. 초보자도 사용할 수 있나요?</span>
+ <p>A: 우리의 인터페이스는 투박하지만 직관적입니다. 복잡한 설정은 필요 없습니다. 타겟 URL 과 키워드만 입력하면 됩니다. 나머지는 기계가 알아서 처리합니다.</p>
+ </div>
+ </section>
 
 </main>
 
 <footer>
-  <h3 style="margin:0; color: var(--accent-color);">DOMINATE THE SERP</h3>
-  <p>마포구 서버 웜업 & 백링크 자동화 솔루션</p>
-  
-  <div class="contact-box">
-    <a href="tel:01062790862" style="color: #000; text-decoration: none;">010-6279-0862</a>
-  </div>
-  
-  <p style="font-size: 0.8rem; margin-top: 2rem; color: #555;">
-    &copy; 2024 Mapo Server Warmup. All Systems Operational.<br>
-    Warning: Use at your own risk. We do not apologize for results.
-  </p>
+ <h3 style="margin:0; color: var(--accent-color);">DOMINATE THE SERP</h3>
+ <p>마포구 서버 웜업 & 백링크 자동화 솔루션</p>
+ 
+ 
+ 
+ <p style="font-size: 0.8rem; margin-top: 2rem; color: #555;">
+ &copy; 2024 Mapo Server Warmup. All Systems Operational.<br>
+ Warning: Use at your own risk. We do not apologize for results.
+ </p>
 </footer>
 
 </body>
